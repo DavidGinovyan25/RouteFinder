@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
-project(RouteCach)
+project(Navigator)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_MINIMUM_REQUIRED TRUE)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(cpr REQUIRED)
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
-
+add_subdirectory(lib)
 add_subdirectory(bin)
-add_subdirectory(src)
